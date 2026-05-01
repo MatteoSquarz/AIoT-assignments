@@ -1,0 +1,4 @@
+CREATE DATABASE "sensorsdata"
+
+CREATE USER "telegraf" WITH PASSWORD 'uforobot'
+GRANT ALL ON "sensorsdata" TO "telegraf"
