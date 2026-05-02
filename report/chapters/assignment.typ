@@ -88,7 +88,7 @@ The difference between a REST-based API (pull model) and a MQTT-based API (push 
 
 #linebreak()
 The code of the bot is available at this GitHub repository:
-https://github.com/yourusername/telegram-bot
+https://github.com/MatteoSquarz/AIoT-assignments/tree/main/telegram_bot
 
 #linebreak()
 In the following @figure-bot you can see the Telegram bot in action, showing the current temperature in Padua and some statistics about it.
