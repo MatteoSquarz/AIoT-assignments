@@ -87,7 +87,7 @@ In the implementation of the bot, I used a REST-based API to get the current wea
 The difference between a REST-based API (pull model) and a MQTT-based API (push model) is that the REST-based API uses a synchronous Request/Response architecture over HTTP, while the MQTT-based API uses an asynchronous Publish/Subscribe architecture.
 
 #linebreak()
-The code of the bot is available in this GitHub repository:
+The code of the bot is available at this GitHub repository:
 https://github.com/yourusername/telegram-bot
 
 #linebreak()
