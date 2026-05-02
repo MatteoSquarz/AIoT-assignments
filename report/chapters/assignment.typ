@@ -78,8 +78,23 @@ networks:
 After running the docker-compose file the two brokers were running simultaneously, and I was able to use the efrecon/mqtt-client image to publish and subscribe to each broker separately by specifying the appropriate port (1883 for broker_a and 1884 for broker_b).
 
 
-= Exercise 4
+= Exercise 4 and 5
+
+For the last two exercises, I wrote a Telegram bot that can be used to get the current temperature in Padua. The bot uses the Open-Meteo API to get the current weather data and it sends the temperature to the user when they send the "/getdata" command. Furthermore, the bot can be used to get some other basic statistics about the weather in Padua, such as the average, the minimum and maximum temperature, and a history of the last 10 measurements.
+
+In the implementation of the bot, I used a REST-based API to get the current weather data from the Open-Meteo server, and I used a local SQLite database to store the temperature measurements. 
+
+The difference between a REST-based API (pull model) and a MQTT-based API (push model) is that the REST-based API uses a synchronous Request/Response architecture over HTTP, while the MQTT-based API uses an asynchronous Publish/Subscribe architecture.
+
+#linebreak()
+The code of the bot is available in this GitHub repository:
+https://github.com/yourusername/telegram-bot
+
+#linebreak()
+In the following @figure-bot you can see the Telegram bot in action, showing the current temperature in Padua and some statistics about it.
 
 
-= Exercise 5
-
+#figure(
+  image("/report/images/bot.png", width: 120%),
+  caption: "Telegram bot to get the current temperature in Padua and some statistics about it."
+)<figure-bot>
