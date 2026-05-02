@@ -22,7 +22,7 @@
         #align(center, text(18pt, hyphenate: false, weight: "semibold", "AIoT basics using Containerization"))
         #set par(justify: true)
         #v(10pt)
-        #align(center, text(14pt, weight: "semibold", "Exercises 1, 2, 3"))
+        #align(center, text(14pt, weight: "semibold", "Exercises 1, 2, 3, 4, 5"))
         #v(50pt)
 
 
