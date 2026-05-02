@@ -1,10 +1,9 @@
-import json
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 import requests
 import os
 from dotenv import load_dotenv
 import db_operations
-from datetime import datetime, timezone
+from datetime import datetime
 
 load_dotenv()
 

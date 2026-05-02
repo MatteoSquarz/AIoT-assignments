@@ -1,5 +1,5 @@
 import sqlite3
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 DB_FILE = 'temperature_data.db'
 
@@ -14,7 +14,7 @@ def init_db():
 def save_data_to_db(data):
     conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
-    timestamp = datetime.now(timezone.utc).isoformat()
+    timestamp = (datetime.now(timezone.utc) + timedelta(hours=2)).isoformat()
     c.execute("INSERT INTO temperature_data (timestamp, temperature) VALUES (?, ?)", (timestamp, data))
     conn.commit()
     conn.close()
