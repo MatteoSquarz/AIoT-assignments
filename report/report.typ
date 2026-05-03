@@ -2,7 +2,7 @@
 
 #show: config.with(
   myAuthor: "Matteo Squarzoni",
-  myTitle: "Lossless Compression - Homework",
+  myTitle: "AIoT Assignments",
   myNumbering: "1.",
   myLang: "en",
 )
