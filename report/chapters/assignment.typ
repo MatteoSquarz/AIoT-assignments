@@ -75,7 +75,7 @@ networks:
 )
 
 After running the docker-compose file the two brokers were running simultaneously, and I was able to use the efrecon/mqtt-client image to publish and subscribe to each broker separately by specifying the appropriate port (1883 for broker_a and 1884 for broker_b). \
-Link to the GitHub repository with the code of the docker-compose file: https://github.com/MatteoSquarz/AIoT-assignments/blob/main/mqtt_brokers/docker-compose.yml
+Here is the link to the GitHub repository with the code of the docker-compose file: https://github.com/MatteoSquarz/AIoT-assignments/blob/main/mqtt_brokers/docker-compose.yml
 
 
 = Exercise 4 and 5
